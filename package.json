@@ -1,0 +1,41 @@
+{
+  "name": "webpack-starter",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "cross-env NODE_ENV=development webpack",
+    "start": "cross-env PORT=8088 NODE_ENV=development webpack serve --open",
+    "build": "cross-env NODE_ENV=production webpack",
+    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
+    "share": "lt -p 8088 --subdomain webpack-starter",
+    "get": "ipconfig | wsl grep 'IPv4' | wsl head -n 1; echo '   You may open your web application by entering this IP plus PORT with any device from LAN.'"
+  },
+  "author": "Maxim Monakhov <maximmon.dev@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/Learning-and-Courses/webpack-starter#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "css-minimizer-webpack-plugin": "^2.0.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-import": "^2.22.1",
+    "html-webpack-plugin": "^5.3.1",
+    "localtunnel": "^2.0.1",
+    "mini-css-extract-plugin": "^1.5.0",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.35.1",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {}
+}
