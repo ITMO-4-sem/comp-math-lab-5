@@ -27,12 +27,14 @@ module.exports = {
   context: path.resolve(__dirname, 'src'), // корневая папка для проекта. Ее указание упрощает написание путей к файлам js и html.
 
   entry: {
-    main: './ts/index.ts',
+    main: './ts/index.ts', // change to './ts/index.ts'
+    debug: './ts/main.ts'
   },
 
   output: {
     filename: isDev ? '[name].js' : '[name].[contenthash].min.js',
     path: path.resolve(__dirname, 'dist'),
+    globalObject: 'this',
   },
 
   devtool: isDev ? 'source-map' : false,
