@@ -4,7 +4,7 @@ import '@scss/index.scss'; // is necessary for connecting styles to index.html
 // @ts-ignore
 import Plotly from 'plotly.js-dist';
 
-import ApexCharts from 'apexcharts';
+// import ApexCharts from 'apexcharts';
 import { Table } from '@ts/calculations/Table';
 import { VariousDifferencesNewtonMethod } from '@ts/calculations/VariousDifferencesNewtonMethod';
 import { FiniteDifferencesNewtonMethod } from '@ts/calculations/FiniteDifferencesNewtonMethod';
