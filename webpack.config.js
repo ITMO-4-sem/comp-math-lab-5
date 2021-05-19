@@ -28,7 +28,7 @@ module.exports = {
 
   entry: {
     main: './ts/index.ts', // change to './ts/index.ts'
-    debug: './ts/main.ts'
+    // debug: './ts/main.ts'
   },
 
   output: {
