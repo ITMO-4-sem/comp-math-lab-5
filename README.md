@@ -3,4 +3,4 @@
 | Интерполяция функции
 
 Посмотреть лабу в деле можно по ссылке 
-[maximmon.dev](https://comp-math-lab-5.itmo.maximmon.dev/).
+[maximon.site](https://comp-math-lab-5.itmo.maximon.site/).
